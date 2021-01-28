@@ -19,13 +19,15 @@
 </script>
 
 <script>
-  import { onDestroy, createEventDispatcher } from 'svelte'
-  import MeetupsStore from '../store/meetups-store.js'
   import Button from "../components/UI/Button.svelte";
   import { slide, fade } from 'svelte/transition'
 
   export let loadedMeetup
 </script>
+
+<svelte:head>
+  <title>MeetUs - {loadedMeetup.title}</title>
+</svelte:head>
 
 <section transition:slide>
   <div class="image" transition:fade>

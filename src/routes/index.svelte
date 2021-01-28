@@ -82,7 +82,7 @@
 </script>
 
 <svelte:head>
-  <title>All Meetups</title>
+  <title>MeetUs - All MeetUps</title>
 </svelte:head>
 
 {#if editMode === 'edit'}
